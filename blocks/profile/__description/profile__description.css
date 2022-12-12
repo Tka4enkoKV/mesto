@@ -6,3 +6,18 @@
   color: #FFFFFF;
   margin: 0;
 }
+
+@media screen and (max-width: 880px) {
+  .profile__description {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .profile__description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
