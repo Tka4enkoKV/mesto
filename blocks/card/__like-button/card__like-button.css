@@ -11,4 +11,10 @@
   background-color: white;
   border: 0;
   padding: 0;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+.card__like-button:hover {
+  opacity: .6;
 }

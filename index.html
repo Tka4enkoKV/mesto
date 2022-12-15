@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./scripts/edit-button.js"></script>
   <title>Mesto Russia</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
@@ -55,9 +56,21 @@
           <button class="card__like-button"></button> 
         </li>
       </ul>
+    </section>
   </main>
+  <div class="popup">
+    <div class="popup__wrapper">
+      <button class="popup__close"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form">
+        <input type="text" class="popup__input popup__input_info_name">
+        <input type="text" class="popup__input popup__input_info_description">
+        <button class="popup__save" type="submit">Сохранить</button>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
-    <p class="footer__copyright">2022 Mesto Russia</p>
+    <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
   </footer>
 </body>
 </html>
