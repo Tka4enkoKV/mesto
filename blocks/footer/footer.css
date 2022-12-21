@@ -4,14 +4,16 @@
   max-width: 880px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .footer {
     max-width: 581px;
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 640px) {
   .footer {
     padding-left: 19px;
+    margin-top: 48px;
+    margin-bottom: 36px;
   }
 }

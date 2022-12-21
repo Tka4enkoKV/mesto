@@ -1,12 +1,13 @@
 .card__place {
-  line-height: 80px;
+  line-height: 29px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin: 0 70px 0 0;
-  padding-left: 21px;
-  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
+  max-width: 200px;
+  list-style-type: none;
 }

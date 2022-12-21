@@ -8,16 +8,16 @@
   padding: 0;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .cards__grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 361px);
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 640px) {
   .cards__grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: 361px;
   }
 }

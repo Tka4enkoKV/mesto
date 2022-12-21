@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./scripts/edit-button.js"></script>
   <title>Mesto Russia</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
@@ -13,64 +12,77 @@
   </header>
   <main class="content">
     <section class="profile">
-      <img src="./images/profile-image.png" alt="Картинка профиля пользователя" class="profile__image" draggable="false">
+      <img src="./images/profile-image.jpg" alt="Картинка профиля пользователя" class="profile__image" draggable="false">
       <div class="profile__user-info">
         <div class="profile__name-wrapper">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button"></button>
+          <button class="profile__edit-button" type="button" aria-label="Изменить профиль"></button>
         </div>
         <p class="profile__description">Исследователь океана</p>
       </div>
-      <button class="profile__add-button"></button>
+      <button class="profile__add-button" type="button" aria-label="Добавить места"></button>
     </section>
     <section class="cards">
       <ul class="cards__grid">
         <li class="card">
-          <img src="./images/karachaevo.png" alt="альт" class="card__image">
-          <h2 class="card__place">Карачаево-Черкессия</h2>
-          <button class="card__like-button"></button> 
+          <img src="./images/karachaevo.jpg" alt="альт" class="card__image">
+          <div class="card__wrapper">
+            <h2 class="card__place">Карачаево-Черкессия</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
         <li class="card">
-          <img src="./images/elbrus.png" alt="альт" class="card__image">
-          <h2 class="card__place">Гора Эльбрус</h2>
-          <button class="card__like-button"></button> 
+          <img src="./images/elbrus.jpg" alt="альт" class="card__image">
+          <div class="card__wrapper">
+            <h2 class="card__place">Гора Эльбрус</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
         <li class="card">
-          <img src="./images/dombay.png" alt="альт" class="card__image">
-          <h2 class="card__place">Домбай</h2>
-          <button class="card__like-button"></button> 
+          <img src="./images/dombay.jpg" alt="альт" class="card__image">
+          <div class="card__wrapper">
+            <h2 class="card__place">Домбай</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
         <li class="card">
           <img src="./images/altai.jpg" alt="альт" class="card__image">
-          <h2 class="card__place">Алтай</h2>
-          <button class="card__like-button"></button> 
+          <div class="card__wrapper">
+            <h2 class="card__place">Алтай</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
         <li class="card">
           <img src="./images/dagestan.jpg" alt="альт" class="card__image">
-          <h2 class="card__place">Дагестан</h2>
-          <button class="card__like-button"></button> 
+          <div class="card__wrapper">
+            <h2 class="card__place">Дагестан</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
         <li class="card">
           <img src="./images/karelia.jpg" alt="альт" class="card__image">
-          <h2 class="card__place">Карелия</h2>
-          <button class="card__like-button"></button> 
+          <div class="card__wrapper">
+            <h2 class="card__place">Карелия</h2>
+            <button class="card__like-button" type="button" aria-label="Лайк"></button>
+          </div>
         </li>
       </ul>
     </section>
-  </main>
-  <div class="popup">
-    <div class="popup__wrapper">
-      <button class="popup__close"></button>
-      <h2 class="popup__title">Редактировать профиль</h2>
-      <form class="popup__form">
-        <input type="text" class="popup__input popup__input_info_name">
-        <input type="text" class="popup__input popup__input_info_description">
-        <button class="popup__save" type="submit">Сохранить</button>
-      </form>
-    </div>
-  </div>
+  </main>  
   <footer class="footer">
     <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
   </footer>
+  <div class="popup">
+    <div class="popup__wrapper">
+      <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form" name="profile-form" action="#" method="get">
+        <input type="text" class="popup__input popup__input_info_name" name="input-name">
+        <input type="text" class="popup__input popup__input_info_description" name="input-description">
+        <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <script defer src="./scripts/scripts.js"></script>
 </body>
 </html>
